@@ -1,0 +1,225 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: normal;
+  font-size: 14px;
+}
+.grid {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: box;
+  display: flex
+}
+
+.cell {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1
+}
+  .audio_header{
+    height: 2rem;
+    background: #fff;
+  }
+  .progress_box{
+    width: 100%;
+    height: 4px;
+    background: #e3e3e3;
+    display: block;
+    margin: 18px 20px;
+    border-radius: 6px;
+    position: relative;
+  }
+  .progress_box .progress_bar{
+    height: 4px;
+    background: #494b5a;
+    display: block;
+    position: absolute;
+    border-radius: 6px;
+  }
+  .progress_state{
+    position: absolute;
+    color: #fff;
+    height: 16px;
+    line-height: 15px;
+    border-radius: 10px;
+    margin-top: -6px;
+    padding: 0 6px;
+    background-image: linear-gradient(0deg, #373737 0%, #636363 100%);
+    display: none;
+  }
+  .audio_head .ward{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .audio_head .ward:active{
+    box-shadow: 0 0 5px #d0d0d0;
+  }
+  .backward{
+   background: url(../image/7.png) center center no-repeat;
+   background-size: 100%;
+  }
+  .forward{
+   background: url(../image/8.png) center center no-repeat;
+   background-size: 100%;
+  }
+
+  .audio_body{
+    padding-top: 10px;
+  }
+
+  .list{
+    width: 80px;
+    height: 40px;
+    background: url(../image/5.png) center center no-repeat;
+    background-size: 30px;
+  }
+  .audio_footer{
+    display: none;
+  }
+  .mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #d4d4d436;
+    z-index: 10;
+  }
+  .sources{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    z-index: 20;
+  }
+  .sources .tip{
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 20px 16px;
+    border-bottom: 1px solid #c3c3c3;
+    margin: 0;
+  }
+  .sources ul{
+    padding: 0 16px 50px;
+  }
+  .sources li{
+    font-size: 16px;
+    color: #363535;
+    padding: 17px 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .playBtn{
+    width: 60px;
+    height: 60px;
+  }
+  .play{
+    background: url(../image/1.png) center center no-repeat;
+    background-size: 60px;
+  }
+  .pause{
+    background: url(../image/0.png) center center no-repeat;
+    background-size: 60px;
+    display: none;
+  }
+  .player .switch{
+    width: 80px;
+    height: 40px;
+    background: url(../image/2.png) center center no-repeat;
+    background-size: 20px;
+  }
+  .player .switch.none{
+    background: url(../image/3.png) center center no-repeat;
+    background-size: 20px;
+  }
+  .player .prev{
+    transform: rotate(180deg);
+  }
+  .player .next{
+
+  }
+  .speed{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    background: url(../image/6.png) center center no-repeat;
+    background-size: 50px;
+  }
+
+
+.fadeout {
+  webkit-animation: fadeout .5s;
+  -ms-animation: fadeout .5s;
+  animation: fadeout .5s
+}
+
+.fadein {
+  webkit-animation: fadein .5s;
+  -ms-animation: fadein .5s;
+  animation: fadein .5s
+}
+
+@keyframes fadein {
+  from {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+@-ms-keyframes fadein {
+  from {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+@keyframes fadeout {
+  from {
+      opacity: 1
+  }
+
+  to {
+      opacity: 0
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+      opacity: 1
+  }
+
+  to {
+      opacity: 0
+  }
+}
+
+@-ms-keyframes fadeout {
+  from {
+      opacity: 1
+  }
+
+  to {
+      opacity: 0
+  }
+}

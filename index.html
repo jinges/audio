@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>demo</title>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+ <div class="audio">
+   <div class="audio_head grid">
+     <span class="backward ward" id="backward"></span>
+     <p class="cell progress_box" id="progress_box">
+       <span class="progress_bar" id="progress" style="width: 0%;"></span>
+       <span class="progress_state" id="progress_state" style="left: 0%;"><em id="timer"></em>/<em id="duration"></em></span>
+     </p>
+     <span class="forward ward" id="forward"></span>
+   </div>
+   <div class="audio_body grid">
+     <div class="list" id="playlistBtn">
+     </div>
+     <div class="player cell grid">
+       <span class="prev switch none" id="prevBtn"></span>
+       <span class="play playBtn  cell" id="playBtn"></span>
+       <span class="pause playBtn  cell" id="pauseBtn"></span>
+       <span class="next switch" id="nextBtn"></span>
+     </div>
+     <span class="speed" id="rateBtn" rate="0">1X</span>
+   </div>
+   <div class="audio_footer" id="list">
+     <div class="mask" id="mask"></div>
+     <div class="sources">
+        <h4 class="tip">推放列表</h4>
+        <ul></ul>
+     </div>
+   </div>
+ </div>
+</body>
+<script src="./assets/js/howler.min.js"></script>
+<script src="./assets/js/player.js"></script>
+</html>
